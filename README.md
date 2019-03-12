@@ -54,7 +54,7 @@ Once you get the above softwares installed and the needed data downloaded:
 
 ## Contents
 This application is made up of several files, most being templates:
-- `catlog.py` Web server, template rendering, and routing is all done here.
+- `catalog.py` Web server, template rendering, and routing is all done here.
 - `database_setup.py` Database schema defined here, and will create `itamcatalog.db`.
 - `Gclient_secret.json` Provides the client ID and client secret from Google for use with OAuth.
 - `templates/` Contains all HTML templates. Each file's name should be self-explanatory.

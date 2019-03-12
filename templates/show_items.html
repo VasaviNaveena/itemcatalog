@@ -1,0 +1,36 @@
+{% include 'header.html' %}
+
+<div class="jumbotron myJumbotron">
+
+  <div class="d-flex mb-3 align-items-center">
+
+    <h1 class="p-2 display-5"><strong class="text-uppercase"><font color="#3c3c3c">{{ item.name }}</font></strong></h1>
+    {% if isLoggedIn() and isOwner(item.user_id) %}
+      <div class="ml-auto p-2">
+        <a class="btn btn-outline-warning" href="/catalog/{{ item.category.name }}/{{ item.id }}/edit"><i class="fas fa-pen"></i>Edit Item</a>
+        <a class="btn btn-outline-danger" href="/catalog/{{ item.category.name }}/{{ item.id }}/delete"><i class="fas fa-trash-alt"></i>Delete Item</a>
+      </div>
+    {% endif %}
+  </div>
+
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      {% for message in messages %}
+        <div class="alert alert-success" role="alert">
+          {{ message }}
+        </div>
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
+
+  <hr class="my-4">
+
+  <p class="font-weight-bolder">
+    <font color="#3c3c3c">{{ item.description }}</font>
+  </p>
+  <p class="font-italic font-weight-light">
+    <strong><font color="#3c3c3c">Category: </strong> {{ item.category.name }}</font> <br/>
+  </p>
+</div>
+
+{% include 'footer.html' %}

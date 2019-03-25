@@ -1,4 +1,4 @@
-#Udacity-FullStackNanodegree Item Catalog Project
+# Udacity-FullStackNanodegree Item Catalog Project
 
 Item Catalog Project is a complete RESTfull web application made using Flask framework. It utilizes different features including Authentication & Authorization using OAuth with Google's API, SQLAlchemy for the database operations, JSON endpoints, local permission system, and finally allows registered users to perform Create, Read, Update, and Delete operations.
 
@@ -7,7 +7,7 @@ Item Catalog Project is a complete RESTfull web application made using Flask fra
 - Download and install [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
 - Download [FSND Virtual Machine](https://github.com/udacity/fullstack-nanodegree-vm).
 
-##Google Client ID and Client Secret:
+## Google Client ID and Client Secret:
 
   1. Go to the [Google APIs Console](https://console.developers.google.com/apis)
     

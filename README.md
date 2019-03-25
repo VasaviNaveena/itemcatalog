@@ -35,13 +35,16 @@ Once you get the above softwares installed and the needed data downloaded:
 `vagrant ssh` - Log into Vagrant Virtual Machine
 `cd /vagrant` - To navigate to the shared repository.
 
-2. You need to setup the database using **database_setup.py** by running the following command: 
+2. You need to setup the database using **database_setup.py** by running the following command:
+
    `python database_setup.py`
 
-3. After that, run the **populated_db.py** by running the following command: 
+3. After that, run the **populated_db.py** by running the following command:
+
    `python populated_db.py`
 
 4. Then, run the server by using the following command: 
+
    `python catalog.py`
 
 5. Go to your browser, and visit `http://localhost:5000`

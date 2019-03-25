@@ -1,4 +1,5 @@
 #Udacity-FullStackNanodegree Item Catalog Project
+
 Item Catalog Project is a complete RESTfull web application made using Flask framework. It utilizes different features including Authentication & Authorization using OAuth with Google's API, SQLAlchemy for the database operations, JSON endpoints, local permission system, and finally allows registered users to perform Create, Read, Update, and Delete operations.
 
 ## Installation
